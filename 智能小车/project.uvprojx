@@ -705,6 +705,36 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Motor.h</FilePath>
             </File>
+            <File>
+              <FileName>USART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\USART.c</FilePath>
+            </File>
+            <File>
+              <FileName>USART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\USART.h</FilePath>
+            </File>
+            <File>
+              <FileName>CarControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\CarControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>CarControl.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\CarControl.h</FilePath>
+            </File>
+            <File>
+              <FileName>Command.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Command.c</FilePath>
+            </File>
+            <File>
+              <FileName>Command.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Command.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

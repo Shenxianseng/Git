@@ -1,6 +1,7 @@
 #include "stm32f10x.h"
 #include "OLED.h"
-#include "Motor.h"
+#include "CarControl.h"
+#include "Command.h"
 #include "Key.h"
 
 int main(void)
@@ -9,7 +10,8 @@ int main(void)
 	uint8_t action = 0;
 
 	OLED_Init();
-	Motor_Init();
+	CarControl_Init();
+	Command_Init();
 	Key_Init();
 
 	OLED_ShowString(1, 1, "CAR TEST");
@@ -29,29 +31,31 @@ int main(void)
 			switch (action)
 			{
 				case 0:
-					Motor_Stop();
+					CarControl_Process('S');
 					OLED_ShowString(2, 1, "STOP       ");
 					break;
 				case 1:
-					Motor_Forward(100);
+					CarControl_Process('F');
 					OLED_ShowString(2, 1, "FORWARD    ");
 					break;
 				case 2:
-					Motor_Backward(100);
+					CarControl_Process('B');
 					OLED_ShowString(2, 1, "BACKWARD   ");
 					break;
 				case 3:
-					Motor_TurnLeft(100);
+					CarControl_Process('L');
 					OLED_ShowString(2, 1, "TURN LEFT  ");
 					break;
 				case 4:
-					Motor_TurnRight(100);
+					CarControl_Process('R');
 					OLED_ShowString(2, 1, "TURN RIGHT ");
 					break;
 				default:
-					Motor_Stop();
+					CarControl_Process('S');
 					break;
 			}
 		}
+
+		Command_Task();
 	}
 }
