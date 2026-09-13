@@ -29,5 +29,6 @@
 .\objects\main.o: .\Lirbrary\stm32f10x_wwdg.h
 .\objects\main.o: .\Lirbrary\misc.h
 .\objects\main.o: .\Hardware\OLED.h
-.\objects\main.o: .\Hardware\Motor.h
+.\objects\main.o: .\Hardware\CarControl.h
+.\objects\main.o: .\Hardware\Command.h
 .\objects\main.o: .\Hardware\Key.h
