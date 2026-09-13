@@ -735,6 +735,36 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Command.h</FilePath>
             </File>
+            <File>
+              <FileName>Servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>Ultrasonic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Ultrasonic.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ultrasonic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Ultrasonic.h</FilePath>
+            </File>
+            <File>
+              <FileName>Avoid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Avoid.c</FilePath>
+            </File>
+            <File>
+              <FileName>Avoid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Avoid.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -774,6 +804,16 @@
               <FileName>Delay.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\System\Delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>Time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\Time.c</FilePath>
+            </File>
+            <File>
+              <FileName>Time.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\Time.h</FilePath>
             </File>
           </Files>
         </Group>

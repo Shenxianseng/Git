@@ -3,6 +3,7 @@
 #include "CarControl.h"
 #include "Command.h"
 #include "Key.h"
+#include "Time.h"
 
 int main(void)
 {
@@ -10,6 +11,7 @@ int main(void)
 	uint8_t action = 0;
 
 	OLED_Init();
+	Time_Init();
 	CarControl_Init();
 	Command_Init();
 	Key_Init();
@@ -23,7 +25,7 @@ int main(void)
 		if (key_num == 1)
 		{
 			action++;
-			if (action > 4)
+			if (action > 6)
 			{
 				action = 0;
 			}
@@ -50,6 +52,14 @@ int main(void)
 					CarControl_Process('R');
 					OLED_ShowString(2, 1, "TURN RIGHT ");
 					break;
+				case 5:
+					CarControl_Process('A');
+					OLED_ShowString(2, 1, "AUTO AVOID ");
+					break;
+				case 6:
+					CarControl_Process('T');
+					OLED_ShowString(2, 1, "SERVO TEST ");
+					break;
 				default:
 					CarControl_Process('S');
 					break;
@@ -57,5 +67,6 @@ int main(void)
 		}
 
 		Command_Task();
+		CarControl_Task();
 	}
 }

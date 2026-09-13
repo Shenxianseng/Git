@@ -32,3 +32,4 @@
 .\objects\main.o: .\Hardware\CarControl.h
 .\objects\main.o: .\Hardware\Command.h
 .\objects\main.o: .\Hardware\Key.h
+.\objects\main.o: .\System\Time.h

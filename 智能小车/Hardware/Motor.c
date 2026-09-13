@@ -36,14 +36,14 @@ void Motor_SetLeftSpeed(int16_t speed)
 	speed = Motor_LimitSpeed(speed);
 	if (speed >= 0)
 	{
-		GPIO_SetBits(GPIOA, MOTOR_LEFT_IN1_PIN);
-		GPIO_ResetBits(GPIOA, MOTOR_LEFT_IN2_PIN);
+		GPIO_ResetBits(GPIOA, MOTOR_LEFT_IN1_PIN);
+		GPIO_SetBits(GPIOA, MOTOR_LEFT_IN2_PIN);
 		PWM_SetCompare3((uint16_t)speed);
 	}
 	else
 	{
-		GPIO_ResetBits(GPIOA, MOTOR_LEFT_IN1_PIN);
-		GPIO_SetBits(GPIOA, MOTOR_LEFT_IN2_PIN);
+		GPIO_SetBits(GPIOA, MOTOR_LEFT_IN1_PIN);
+		GPIO_ResetBits(GPIOA, MOTOR_LEFT_IN2_PIN);
 		PWM_SetCompare3((uint16_t)(-speed));
 	}
 }
@@ -53,14 +53,14 @@ void Motor_SetRightSpeed(int16_t speed)
 	speed = Motor_LimitSpeed(speed);
 	if (speed >= 0)
 	{
-		GPIO_SetBits(GPIOA, MOTOR_RIGHT_IN1_PIN);
-		GPIO_ResetBits(GPIOA, MOTOR_RIGHT_IN2_PIN);
+		GPIO_ResetBits(GPIOA, MOTOR_RIGHT_IN1_PIN);
+		GPIO_SetBits(GPIOA, MOTOR_RIGHT_IN2_PIN);
 		PWM_SetCompare4((uint16_t)speed);
 	}
 	else
 	{
-		GPIO_ResetBits(GPIOA, MOTOR_RIGHT_IN1_PIN);
-		GPIO_SetBits(GPIOA, MOTOR_RIGHT_IN2_PIN);
+		GPIO_SetBits(GPIOA, MOTOR_RIGHT_IN1_PIN);
+		GPIO_ResetBits(GPIOA, MOTOR_RIGHT_IN2_PIN);
 		PWM_SetCompare4((uint16_t)(-speed));
 	}
 }

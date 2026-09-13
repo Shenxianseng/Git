@@ -29,3 +29,4 @@
 .\objects\stm32f10x_it.o: .\Lirbrary\stm32f10x_usart.h
 .\objects\stm32f10x_it.o: .\Lirbrary\stm32f10x_wwdg.h
 .\objects\stm32f10x_it.o: .\Lirbrary\misc.h
+.\objects\stm32f10x_it.o: .\System\Time.h

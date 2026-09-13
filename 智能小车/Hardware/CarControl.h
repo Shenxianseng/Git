@@ -7,5 +7,6 @@
 
 void CarControl_Init(void);
 void CarControl_Process(uint8_t command);
+void CarControl_Task(void);
 
 #endif

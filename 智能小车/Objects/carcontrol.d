@@ -29,4 +29,6 @@
 .\objects\carcontrol.o: .\Lirbrary\stm32f10x_usart.h
 .\objects\carcontrol.o: .\Lirbrary\stm32f10x_wwdg.h
 .\objects\carcontrol.o: .\Lirbrary\misc.h
+.\objects\carcontrol.o: Hardware\Avoid.h
+.\objects\carcontrol.o: Hardware\Servo.h
 .\objects\carcontrol.o: Hardware\CarControl.h
